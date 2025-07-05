@@ -31,15 +31,15 @@ html.dark{
   }
 
   .text-heading-1 {
-    color: rgb(var(--heading-1));
+    background-color: rgb(var(--heading-1));
   }
 
   .text-heading-2 {
-    color: rgb(var(--heading-2));
+    background-color: rgb(var(--heading-2));
   }
 
   .text-heading-3 {
-    color: rgb(var(--heading-3));
+    background-color: rgb(var(--heading-3));
   }
 }
 
