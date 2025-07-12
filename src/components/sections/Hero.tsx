@@ -1,4 +1,5 @@
 import Container from "../shared/Container";
+import { Paragraph } from "../shared/Paragraph";
 
 export const Hero = () => {
   return (
@@ -30,6 +31,7 @@ export const Hero = () => {
               Vite React{" "}
             </span>
           </h1>
+          <Paragraph>dk</Paragraph>
         </div>
       </Container>
     </section>
