@@ -8,7 +8,7 @@ const navItems = [
   { href: "#", text: "Home" },
   { href: "#service", text: "Services" },
   { href: "#about-us", text: "About Us" },
-  { href: "#contact", text: "Home" },
+  { href: "#contact", text: "Features" },
 ];
 
 const Navbar = () => {
@@ -21,7 +21,10 @@ const Navbar = () => {
           <div className="min-w-max inline-flex relative">
             <a href="/" className="relative flex items-center gap-2">
               <img src={logo} alt="logo" className="w-10 h-10" />
-              <div className="inline-flex text-lg font-semibold items-center">
+              <div
+                className="inline-flex text-lg font-semibold
+                text-heading-1 items-center"
+              >
                 CreateReactApp
               </div>
             </a>
@@ -35,7 +38,7 @@ const Navbar = () => {
             <ul
               className="border-t border-box-border lg:border-t-0 px-6 lg:px-0
               lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 text-lg
-              w-full lg:justify-center lg:items-center"
+              w-full lg:justify-center lg:items-center text-heading-2"
             >
               {navItems.map((item, key) => (
                 <NavItem key={key} href={item.href} text={item.text} />
@@ -54,7 +57,7 @@ const Navbar = () => {
             <button
               onClick={toggleTheme}
               className="outline-hidden flex items-center justify-center text-heading-2 rounded-full
-              w-10 h-10 lg:w-12 lg:h-12 border border-box-border cursor-pointer"
+              w-10 h-f10 lg:w-12 lg:h-12 border border-box-border cursor-pointer"
             >
               {theme === "dark" ? (
                 <svg
