@@ -57,7 +57,7 @@ const Navbar = () => {
             <button
               onClick={toggleTheme}
               className="outline-hidden flex items-center justify-center text-heading-2 rounded-full
-              w-10 h-f10 lg:w-12 lg:h-12 border border-box-border cursor-pointer"
+              w-10 h-10 lg:w-12 lg:h-12 border border-box-border cursor-pointer"
             >
               {theme === "dark" ? (
                 <svg
