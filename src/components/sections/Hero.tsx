@@ -31,7 +31,7 @@ export const Hero = () => {
               Vite React{" "}
             </span>
           </h1>
-          <Paragraph>MISHIMA</Paragraph>
+          <Paragraph>jfadflk;jls;fjak;sfj;jslj</Paragraph>
         </div>
       </Container>
     </section>
