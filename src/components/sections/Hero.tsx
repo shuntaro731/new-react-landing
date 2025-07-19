@@ -31,7 +31,44 @@ export const Hero = () => {
               Vite React{" "}
             </span>
           </h1>
-          <Paragraph>jfadflk;jls;fjak;sfj;jslj</Paragraph>
+          <Paragraph className="mt-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            facilis quibusdam sit quam sint, consectetur corrupti laborum
+            perferendis odit repellendus quia accusantium voluptatibus. Aliquid
+            aut dolorem officiis cum nobis voluptas!
+          </Paragraph>
+          <div className="mt-10 w-full flex max-w-md mx-auto lg:mx-0">
+            <div className="flex sm:flex-row flex-col gap-5 w-full">
+              <form
+                action="#"
+                className="py-1 pl-6 w-full pr-1 flex gap-3 items-center text-heading-3
+                  shadow-lg shadow-box-shadow border border-box-border
+                  bg-box-bg rounded-full ease-linear focus-within:bg-body
+                  focus-within:border-primary"
+              >
+                <span className="min-w-max pr-2 border-r border-box-border">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="icon icon-tabler icons-tabler-outline icon-tabler-mail-opened"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 9l9 6l9 -6l-9 -6l-9 6" />
+                    <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                    <path d="M3 19l6 -6" />
+                    <path d="M15 13l6 6" />
+                  </svg>
+                </span>
+              </form>
+            </div>
+          </div>
         </div>
       </Container>
     </section>
