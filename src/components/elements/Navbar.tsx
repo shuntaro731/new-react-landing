@@ -4,14 +4,15 @@ import NavItem from "../shared/NavItem";
 import BtnLink from "../shared/BtnLink";
 import { useThemeStore } from "../../store/ThemeStore";
 
-const navItems = [
+// eslint-disable-next-line react-refresh/only-export-components
+export const navItems = [
   { href: "#", text: "Home" },
-  { href: "#service", text: "Services" },
+  { href: "#services", text: "Services" },
   { href: "#about-us", text: "About Us" },
-  { href: "#contact", text: "Features" },
+  { href: "#contact", text: "Contact" },
 ];
 
-const Navbar = () => {
+export const Navbar = () => {
   const { toggleTheme, theme } = useThemeStore();
 
   return (
@@ -97,5 +98,3 @@ const Navbar = () => {
     </header>
   );
 };
-
-export default Navbar;

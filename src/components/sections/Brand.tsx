@@ -8,7 +8,7 @@ const Brand = () => {
     <section className="">
       <Container className="space-top-8">
         <div className="text-center max-w-3xl mx-auto">
-          <Title>Powered by V-Event</Title>
+          <Title>Our partners</Title>
         </div>
       </Container>
       <div className="flex justify-center flex-wrap gap-4">
