@@ -1,5 +1,6 @@
 import Container from "../shared/Container";
 import logo from "../../assets/my-logo.svg";
+import darkLogo from "../../assets/dark-my-logo.svg";
 import NavItem from "../shared/NavItem";
 import BtnLink from "../shared/BtnLink";
 import { useThemeStore } from "../../store/ThemeStore";
@@ -15,7 +16,7 @@ export const navItems = [
 ];
 
 export const Navbar = () => {
-  const { toggleTheme } = useThemeStore();
+  const { toggleTheme, theme } = useThemeStore();
   const lottieContainer = useRef<HTMLDivElement>(null);
   const animationRef = useRef<AnimationItem | null>(null);
   const forwardRef = useRef(true);
@@ -89,7 +90,11 @@ export const Navbar = () => {
         <nav className="w-full flex justify-between gap-6 relative">
           <div className="min-w-max inline-flex relative lg:flex">
             <a href="/" className="relative flex items-center gap-2 text-heading-1">
-              <img src={logo} alt="logo" className="w-32 h-auto" />
+              <img
+                src={theme === 'dark' ? darkLogo : logo}
+                alt="logo"
+                className="w-32 h-auto"
+              />
             </a>
           </div>
 
@@ -99,7 +104,7 @@ export const Navbar = () => {
           >
             <ul
               className="border-t border-box-border lg:border-t-0 px-6 lg:px-0
-              lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 text-lg
+              lg:pt-0 flex flex-col lg:flex-row gap-x-8 text-base
               w-full lg:justify-center lg:items-center text-heading-1"
             >
               {navItems.map((item, key) => (
@@ -119,7 +124,7 @@ export const Navbar = () => {
             <button
               onClick={handleToggle}
               className="outline-hidden flex items-center justify-center text-heading-1 rounded-full
-               h-10 lg:w-12 lg:h-12 cursor-pointer overflow-hidden"
+              h-10 lg:w-12 lg:h-12 cursor-pointer overflow-hidden"
             >
               <div ref={lottieContainer} className="w-6 h-6" />
             </button>

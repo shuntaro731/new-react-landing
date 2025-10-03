@@ -38,7 +38,7 @@ export const Product = () => {
             Our Works
           </h1>
           <p className="text-lg text-heading-3">
-            革新的なAIソリューションで実現した、クライアントの成功事例をご紹介します
+            reactで作った課題の一部を紹介します。
           </p>
         </div>
 

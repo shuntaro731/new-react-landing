@@ -16,7 +16,7 @@ const Layout = ({ title, children }: LayoutProps) => {
     <>
       <Navbar />
 
-      <main className="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
+      <main className="flex flex-col gap-y-28 md:gap-y-36 overflow-hidden">
         {children}
       </main>
 

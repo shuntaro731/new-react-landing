@@ -8,6 +8,7 @@
   --heading-1: 33 33 33;
   --heading-2: 55 65 81;
   --heading-3: 107 114 128;
+  --btn-text: 255 255 255;
 
   --font-sans: "Noto Sans JP", sans-serif;
   --font-display: "Bebas Neue", sans-serif;
@@ -21,6 +22,7 @@
   --heading-1: 255 255 255;
   --heading-2: 229 231 235;
   --heading-3: 156 163 175;
+  --btn-text: 0 0 0;
 }
 
 @layer utilities {
@@ -42,6 +44,9 @@
   }
   .text-heading-3 {
     color: rgb(var(--heading-3));
+  }
+  .text-btn {
+    color: rgb(var(--btn-text));
   }
 
   .fill-heading-1 {

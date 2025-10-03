@@ -106,7 +106,7 @@ const ContactForm = () => {
                 onChange={handleChange}
                 required
                 rows={4}
-                className="w-full px-0 py-3 bg-transparent border-b border-[rgb(var(--box-border))] text-heading-2 placeholder:text-heading-3 focus:outline-none focus:border-heading-1 transition-colors resize-none"
+                className="w-full px-0 py-3 bg-transparent border-b border-[rgb(var(--box-border))] text-heading-2 placeholder:text-heading-3 focus:outline-none focus:border-heading-1 transition-colors"
                 placeholder="Message"
                 disabled={status === "loading"}
               />
