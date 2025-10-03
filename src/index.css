@@ -43,13 +43,8 @@
     font-family: var(--font-sans);
   }
 
-  .dark .nav-glass {
-    background: rgba(17, 24, 39, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
   .animate-scroll {
-    animation: scroll 30s linear infinite;
+    animation: scroll 40s linear infinite;
   }
 
   @keyframes scroll {
