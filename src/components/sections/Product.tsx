@@ -7,14 +7,14 @@ interface ProductItemProps {
   image: string;
 }
 
-function ProductCard({ id, title, description, image }: ProductItemProps) {
+function ProductCard({ title, description, image }: ProductItemProps) {
   return (
     <div className="flex flex-col">
       <div className="relative overflow-hidden rounded-2xl shadow-lg">
         <img
           src={image}
           alt={title}
-          className="w-full h-[300px] object-cover"
+          className="w-full h-[300px] object-cover grayscale hover:grayscale-0 hover:scale-105 transition-all duration-300 cursor-pointer"
         />
       </div>
       <div className="mt-6 space-y-3">

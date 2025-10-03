@@ -20,10 +20,10 @@ export const Hero = () => {
           </p>
 
           <div className="mb-6">
-            <div className="w-1.5 h-1 md:w-2 md:h-1.5 mx-auto rouded-f bg-[rgb(var(--heading-1))]"></div>
+            <div className="w-1.5 h-1 md:w-2 md:h-1.5 mx-auto rouded-f bg-heading-1"></div>
           </div>
 
-          <p className="text-base md:text-lg lg:text-xl font-semibold text-heading-1">
+          <p className="text-base md:text-lg lg:text-xl font-sans font-normal text-heading-1">
             アイデアを形にする。
           </p>
         </div>

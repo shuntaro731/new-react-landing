@@ -4,11 +4,24 @@ interface NavItemProps {
 }
 
 const NavItem = ({ href, text }: NavItemProps) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const targetElement = targetId ? document.getElementById(targetId) : null;
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <li>
       <a
         href={href}
-        className="duration-400 font-medium ease-linear hover:text-primary"
+        onClick={handleClick}
+        className="duration-400 font-medium ease-linear hover:opacity-70 transition-opacity cursor-pointer"
       >
         {text}
       </a>

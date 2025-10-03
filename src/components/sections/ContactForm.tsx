@@ -1,7 +1,6 @@
-import { useState, FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 import Container from "../shared/Container";
 import { Paragraph } from "../shared/Paragraph";
-import { Title } from "../shared/Title";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -58,7 +57,7 @@ const ContactForm = () => {
       <Container className="flex flex-col md:flex-row gap-12 lg:gap-16 items-start">
         <div className="w-full md:w-5/12 lg:w-1/2">
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-heading-1 mb-6">
-            CONTACT
+            CONTACT US
           </h2>
           <Paragraph>
             For any enquiries, get in touch and contact us.

@@ -6,6 +6,8 @@
   --box-border: 229 231 235;
   --box-sd: 226 232 240 / 0.5;
   --heading-1: 33 33 33;
+  --heading-2: 55 65 81;
+  --heading-3: 107 114 128;
 
   --font-sans: "Noto Sans JP", sans-serif;
   --font-display: "Bebas Neue", sans-serif;
@@ -17,6 +19,8 @@
   --box-border: 243 244 246 / 0.1;
   --box-sd: transparent;
   --heading-1: 255 255 255;
+  --heading-2: 229 231 235;
+  --heading-3: 156 163 175;
 }
 
 @layer utilities {
@@ -26,6 +30,10 @@
   .bg-box-bg {
     background-color: rgb(var(--color-box));
   }
+  .bg-heading-1 {
+    background-color: rgb(var(--heading-1));
+  }
+
   .text-heading-1 {
     color: rgb(var(--heading-1));
   }
@@ -34,6 +42,13 @@
   }
   .text-heading-3 {
     color: rgb(var(--heading-3));
+  }
+
+  .fill-heading-1 {
+    fill: rgb(var(--heading-1));
+  }
+  .stroke-heading-1 {
+    stroke: rgb(var(--heading-1));
   }
 
   .font-display {
