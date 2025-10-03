@@ -6,8 +6,6 @@
   --box-border: 229 231 235;
   --box-sd: 226 232 240 / 0.5;
   --heading-1: 33 33 33;
-  --heading-2: 33 33 33;
-  --heading-3: 33 33 33;
 
   --font-sans: "Noto Sans JP", sans-serif;
   --font-display: "Bebas Neue", sans-serif;
@@ -19,8 +17,6 @@
   --box-border: 243 244 246 / 0.1;
   --box-sd: transparent;
   --heading-1: 255 255 255;
-  --heading-2: 243 244 246;
-  --heading-3: 209 213 219;
 }
 
 @layer utilities {
@@ -40,7 +36,6 @@
     color: rgb(var(--heading-3));
   }
 
-  /* Font utilities */
   .font-display {
     font-family: var(--font-display);
   }
@@ -51,6 +46,19 @@
   .dark .nav-glass {
     background: rgba(17, 24, 39, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 }
 

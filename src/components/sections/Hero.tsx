@@ -9,8 +9,8 @@ export const Hero = () => {
             Portfolio of Hata Shuntarou.
           </span>
         </h1>
-        <div className="text-center max-w-3xl mx-auto mb-28">
-          <p className="text-[0.625rem] md:text-xs uppercase tracking-wider leading-relaxed mb-6 text-heading-3">
+        <div className="text-center max-w-3xl mx-auto mb-24">
+          <p className="text-[0.625rem] md:text-xs uppercase tracking-wider leading-relaxed mb-6 text-heading-1">
             WITH THE POWER TO CREATE TECHNOLOGY AND MECHANISMS,
             <br />
             WE WILL CREATE A NEW IMPACT ON CONSUMPTION AND DISTRIBUTION IN JAPAN
@@ -19,22 +19,21 @@ export const Hero = () => {
             BY EXTENSION, THE WORLD.
           </p>
 
-          <div className="mb-4">
-            <div className="w-1 h-1 md:w-1.5 md:h-1.5 mx-auto  bg-[rgb(var(--heading-1))]"></div>
+          <div className="mb-6">
+            <div className="w-1.5 h-1 md:w-2 md:h-1.5 mx-auto rouded-f bg-[rgb(var(--heading-1))]"></div>
           </div>
 
-          <p className="text-xl md:text-2xl lg:text-2xl font-semibold text-heading-1">
+          <p className="text-base md:text-lg lg:text-xl font-semibold text-heading-1">
             アイデアを形にする。
           </p>
         </div>
       </div>
 
-      {/* Bottom Image */}
       <div className="relative w-full max-w-7xl mx-auto">
         <img
           src={mainImage}
           alt="Portfolio hero"
-          className="w-full h-auto object-cover"
+          className="w-full h-auto object-cover rounded-3xl"
         />
       </div>
     </section>

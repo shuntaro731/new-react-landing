@@ -17,7 +17,7 @@ const Service = ({ title, description, icon }: ServiceProps) => {
         {icon}
       </div>
       <div className="mt-6 space-y-4 relative">
-        <h2 className="text-lg md:text-xl font-semibold text-heading-2">
+        <h2 className="text-lg md:text-xl font-semibold text-heading-1">
           {title}
         </h2>
         <Paragraph> {description}</Paragraph>

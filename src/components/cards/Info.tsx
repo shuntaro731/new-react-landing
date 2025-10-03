@@ -16,7 +16,7 @@ const Info = ({ title, description, children }: InfoProps) => {
       <div className="rounded-xl bg-body p-3 text-heading-1 w-max relative">
         {children}
       </div>
-      <h2 className="text-heading-2 w-max relative font-semibold md:text-xl">
+      <h2 className="text-heading-1 w-max relative font-semibold md:text-xl">
         {title}
       </h2>
       <Paragraph>{description}</Paragraph>

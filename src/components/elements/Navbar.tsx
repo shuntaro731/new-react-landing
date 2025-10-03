@@ -33,7 +33,7 @@ export const Navbar = () => {
             <ul
               className="border-t border-box-border lg:border-t-0 px-6 lg:px-0
               lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 text-lg
-              w-full lg:justify-center lg:items-center text-heading-2"
+              w-full lg:justify-center lg:items-center text-heading-1"
             >
               {navItems.map((item, key) => (
                 <NavItem key={key} href={item.href} text={item.text} />
@@ -51,7 +51,7 @@ export const Navbar = () => {
           <div className="min-w-max flex items-center gap-x-3">
             <button
               onClick={toggleTheme}
-              className="outline-hidden flex items-center justify-center text-heading-2 rounded-full
+              className="outline-hidden flex items-center justify-center text-heading-1 rounded-full
               w-10 h-10 lg:w-12 lg:h-12 border border-box-border cursor-pointer"
             >
               {theme === "dark" ? (
